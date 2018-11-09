@@ -9,6 +9,10 @@ const app = express()
 app.use(bodyParser.json())
 app.use(cors())
 
+app.get('/answers', (req, res, next) => {
+    res.send({ data: data })
+})
+
 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
