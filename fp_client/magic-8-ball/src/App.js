@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import AnswerDisplay from './Components/AnswerDisplay';
 
@@ -24,8 +23,10 @@ class App extends Component {
     console.log(this.state)
     return (
       <div>
-        <AnswerDisplay randomAnswer={this.state.randomAnswer} />
+        { this.state.randomAnswer ?
+        <AnswerDisplay randomAnswer={this.state.randomAnswer} /> : 
         <div>loading...</div>
+        }
       </div>
     );
   }
