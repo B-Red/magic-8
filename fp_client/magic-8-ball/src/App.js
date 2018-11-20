@@ -21,11 +21,11 @@ class App extends Component {
   
   
   render() {
-    console.log(this.state.randomAnswer)
+    console.log(this.state)
     return (
       <div>
         <AnswerDisplay randomAnswer={this.state.randomAnswer} />
-        <div></div>
+        <div>loading...</div>
       </div>
     );
   }

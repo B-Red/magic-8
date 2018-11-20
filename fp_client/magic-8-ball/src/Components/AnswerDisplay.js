@@ -1,8 +1,9 @@
 import React from 'react'
 
 const AnswerDisplay = (props) => {
+    console.log(props)
     return(
-        <div>fuckkkckckckc</div>
+        <div>whatever</div>
     )
 }
 
